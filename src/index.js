@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: 'https://stelen-artefrances.netlify.app'}));
 app.use(express.static(path.join(__dirname, 'views')));
 
 
